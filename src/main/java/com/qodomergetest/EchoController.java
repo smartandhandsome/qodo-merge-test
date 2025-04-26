@@ -20,4 +20,9 @@ public class EchoController {
         return ResponseEntity.ok(request.toUpperCase());
     }
 
+    @GetMapping("/lower")
+    public ResponseEntity<String> getLower(@RequestBody String request) {
+        return ResponseEntity.ok(request.toLowerCase());
+    }
+
 }
