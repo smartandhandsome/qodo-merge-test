@@ -15,4 +15,9 @@ public class EchoController {
         return ResponseEntity.ok(request);
     }
 
+    @GetMapping("/upper")
+    public ResponseEntity<String> getUpper(@RequestBody String request) {
+        return ResponseEntity.ok(request.toUpperCase());
+    }
+
 }
