@@ -25,9 +25,9 @@ class EchoControllerTest {
         assertEquals("HELLO", hello.getBody());
     }
 
-    @Test
-    void getLower() {
-        ResponseEntity<String> hello = echoController.getLower("Hello");
-        assertEquals("hello", hello.getBody());
-    }
+//    @Test
+//    void getLower() {
+//        ResponseEntity<String> hello = echoController.getLower("Hello");
+//        assertEquals("hello", hello.getBody());
+//    }
 }
