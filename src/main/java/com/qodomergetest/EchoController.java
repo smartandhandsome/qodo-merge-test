@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class EchoController {
 
+    private final ProviderService provderSevice;
+
     @PostMapping("/echo")
     public ResponseEntity<String> get(@RequestBody String request) {
         return ResponseEntity.ok(request);
